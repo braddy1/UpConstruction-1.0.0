@@ -19,7 +19,7 @@
 /* Colors */
 :root {
   --color-default: #364d59;
-  --color-primary: #feb900;
+  --color-primary: #f3c423;
   --color-secondary: #52565e;
 }
 
@@ -60,8 +60,9 @@ h6 {
   font-family: var(--font-primary);
 }
 .logo-img {
-  width: 80px; /* Cambiar el valor según el tamaño deseado */
-  height: auto; /* Esto mantendrá la proporción del tamaño original de la imagen */
+  width: 200px; /* Cambiar el valor según el tamaño deseado */
+  height:auto; /* Esto mantendrá la proporción del tamaño original de la imagen */
+  
 }
 .titulo {
   margin-left: auto ;
@@ -267,6 +268,16 @@ section {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
+header{
+
+  width: 100vw;
+  height: 80px;
+  background-color: #01274c;
+  box-shadow: 0px 3px 8px rgba(31, 2, 2, 0.3);
+  display: flex;
+  align-items: center;
+}
 .header {
   z-index: 997;
   position: absolute;
@@ -277,10 +288,10 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 50px;
   margin-right: 6px;
 }
-
+/*
 .header .logo h1 {
   font-size: 24px;
   font-weight: 700;
@@ -292,13 +303,14 @@ section {
 .header .logo h1 span {
   color: var(--color-primary);
 }
-
+*/
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
 @media (min-width: 1280px) {
   .navbar {
     padding: 0;
+    
   }
 
   .navbar ul {
@@ -327,7 +339,7 @@ section {
     font-family: var(--font-primary);
     font-size: 14px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgb(253, 251, 251);
     text-transform: uppercase;
     white-space: nowrap;
     transition: 0.3s;
@@ -365,7 +377,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: #9cc2e6;
   }
 
   .navbar .dropdown ul {
@@ -378,8 +390,8 @@ section {
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    background: #01274c;
+    box-shadow: 0px 0px 0px rgb(245, 246, 248);
     transition: 0.3s;
   }
 
@@ -391,7 +403,7 @@ section {
     padding: 10px 20px;
     font-size: 15px;
     text-transform: none;
-    color: var(--color-default);
+    color: #ffff;
     font-weight: 400;
   }
 
@@ -402,7 +414,7 @@ section {
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
   .navbar .dropdown ul li:hover>a {
-    color: var(--color-primary);
+    color: #9cc2e6;
   }
 
   .navbar .dropdown:hover>ul {
@@ -1908,7 +1920,7 @@ section {
 
 @media (max-width: 768px) {
   .hero .info {
-    padding: 0 50px;
+    padding: 0 80px;
   }
 }
 
@@ -1969,7 +1981,7 @@ section {
 
 @media (min-width: 640px) {
   .hero .carousel-control-prev {
-    padding-left: 15px;
+    padding-left: 20px;
   }
 }
 
